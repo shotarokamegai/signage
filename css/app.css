@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.scene {
+  position: fixed;
+  width: 1920px;
+  height: 1080px;
+  opacity: 0;
+  -webkit-transition: opacity 1.5s;
+  overflow: hidden;
+}
+.scene.active {
+  opacity: 1;
+}
+.scene > .wrapper {
+  position: relative;
+  height: inherit;
+  width: inherit;
+}
+video {
+  height: inherit;
+  width: inherit;
+}
